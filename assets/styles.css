@@ -1,18 +1,18 @@
 :root {
-  --page: #f6f8f9;
+  --page: #f5f8fb;
   --surface: #ffffff;
-  --surface-muted: #eef2f4;
-  --ink: #15202b;
-  --ink-strong: #0d1720;
-  --muted: #5c6975;
-  --line: #d7dee4;
-  --line-strong: #b9c5ce;
-  --accent: #276c7a;
-  --accent-deep: #182734;
-  --accent-warm: #a25b45;
+  --surface-muted: #eaf2f7;
+  --ink: #172334;
+  --ink-strong: #0c1726;
+  --muted: #5d6b7a;
+  --line: #d6e0e8;
+  --line-strong: #b4c3cf;
+  --accent: #3a86a8;
+  --accent-deep: #14233a;
+  --accent-warm: #d2765f;
   --hero-ink: #ffffff;
-  --shadow: 0 18px 42px rgba(13, 23, 32, 0.1);
-  --shadow-soft: 0 10px 26px rgba(13, 23, 32, 0.08);
+  --shadow: 0 18px 42px rgba(12, 23, 38, 0.1);
+  --shadow-soft: 0 10px 26px rgba(12, 23, 38, 0.08);
 }
 
 * {
@@ -37,7 +37,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(39, 108, 122, 0.36);
+  outline: 3px solid rgba(58, 134, 168, 0.36);
   outline-offset: 3px;
 }
 
@@ -68,8 +68,8 @@ button:focus-visible {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(246, 248, 249, 0.88);
-  border-bottom: 1px solid rgba(215, 222, 228, 0.9);
+  background: rgba(245, 248, 251, 0.88);
+  border-bottom: 1px solid rgba(214, 224, 232, 0.9);
   backdrop-filter: blur(16px);
 }
 
@@ -135,7 +135,7 @@ nav {
 }
 
 .nav-links a:hover {
-  background: rgba(39, 108, 122, 0.08);
+  background: rgba(58, 134, 168, 0.08);
   color: var(--accent);
 }
 
@@ -146,7 +146,7 @@ nav {
   align-items: center;
   color: var(--hero-ink);
   background:
-    linear-gradient(90deg, rgba(12, 22, 31, 0.92) 0%, rgba(24, 39, 52, 0.82) 45%, rgba(24, 39, 52, 0.2) 100%),
+    linear-gradient(90deg, rgba(12, 23, 38, 0.92) 0%, rgba(20, 35, 58, 0.82) 45%, rgba(20, 35, 58, 0.2) 100%),
     url("hero-architecture.jpg");
   background-position: center;
   background-size: cover;
