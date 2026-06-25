@@ -1,8 +1,24 @@
 const root = document.documentElement;
 const themeToggle = document.querySelector(".theme-toggle");
-const savedTheme = localStorage.getItem("theme");
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const savedTheme = getStoredTheme();
+const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
 const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+
+function getStoredTheme() {
+  try {
+    return localStorage.getItem("theme");
+  } catch {
+    return null;
+  }
+}
+
+function storeTheme(theme) {
+  try {
+    localStorage.setItem("theme", theme);
+  } catch {
+    return;
+  }
+}
 
 function setTheme(theme) {
   root.dataset.theme = theme;
@@ -18,7 +34,7 @@ setTheme(initialTheme);
 
 themeToggle?.addEventListener("click", () => {
   const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", nextTheme);
+  storeTheme(nextTheme);
   setTheme(nextTheme);
 });
 
@@ -92,7 +108,7 @@ const approachSteps = [
   },
   {
     number: "04",
-    title: "Platform Blueprint",
+    title: "Domain Blueprint",
     summary: "Shape the target architecture across integration, data, security, resilience, cloud, and operational concerns.",
     outputs: ["Solution blueprint", "Integration patterns", "Key architecture decisions"]
   },
@@ -112,13 +128,16 @@ const approachSteps = [
 
 const approachButtons = Array.from(document.querySelectorAll(".approach-step"));
 const approachDetail = document.querySelector(".approach-detail");
+let activeApproachIndex = 0;
 
 function renderApproachStep(index) {
   const step = approachSteps[index];
 
-  if (!step || !approachDetail) {
+  if (!step || !approachDetail || !approachButtons.length) {
     return;
   }
+
+  activeApproachIndex = index;
 
   approachButtons.forEach((button, buttonIndex) => {
     const isActive = buttonIndex === index;
@@ -141,18 +160,20 @@ function renderApproachStep(index) {
 
 approachButtons.forEach((button, index) => {
   button.addEventListener("click", () => renderApproachStep(index));
+  button.addEventListener("pointerenter", () => renderApproachStep(index));
+  button.addEventListener("focus", () => renderApproachStep(index));
   button.addEventListener("keydown", (event) => {
     if (!["ArrowRight", "ArrowDown", "ArrowLeft", "ArrowUp", "Home", "End"].includes(event.key)) {
       return;
     }
 
     event.preventDefault();
-    let nextIndex = index;
+    let nextIndex = activeApproachIndex;
 
     if (event.key === "ArrowRight" || event.key === "ArrowDown") {
-      nextIndex = (index + 1) % approachButtons.length;
+      nextIndex = (activeApproachIndex + 1) % approachButtons.length;
     } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
-      nextIndex = (index - 1 + approachButtons.length) % approachButtons.length;
+      nextIndex = (activeApproachIndex - 1 + approachButtons.length) % approachButtons.length;
     } else if (event.key === "Home") {
       nextIndex = 0;
     } else if (event.key === "End") {
