@@ -109,6 +109,43 @@
       </div>
     </section>
 
+    <section class="section principles-section" id="principles">
+      <div class="container">
+        <div class="principles-layout">
+          <div class="section-header principles-header">
+            <p class="kicker">Principles</p>
+            <h2>Architecture decisions that stay useful after delivery.</h2>
+            <p class="section-intro">
+              A few working principles that guide how I approach enterprise change,
+              cloud adoption, digital channels, and AI-enabled delivery.
+            </p>
+          </div>
+          <div class="principles-grid" aria-label="Architecture principles">
+            <article class="principle-item">
+              <span>01</span>
+              <h3>Outcome-led</h3>
+              <p>Start with the business result, then shape technology choices around measurable value and delivery reality.</p>
+            </article>
+            <article class="principle-item">
+              <span>02</span>
+              <h3>Simple by design</h3>
+              <p>Prefer clear, maintainable architecture over unnecessary complexity, especially in large enterprise environments.</p>
+            </article>
+            <article class="principle-item">
+              <span>03</span>
+              <h3>Secure and resilient</h3>
+              <p>Design for trust, continuity, operability, and pragmatic risk management from the start.</p>
+            </article>
+            <article class="principle-item">
+              <span>04</span>
+              <h3>AI-ready</h3>
+              <p>Think about data, governance, human oversight, and agentic AI patterns as part of modern platform design.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="experience">
       <div class="container">
         <div class="experience-layout">
@@ -232,7 +269,7 @@
 
   <footer>
     <div class="container">
-      &copy; 2026 Iwan Budiman. Built with HTML.
+      &copy; 2026 Iwan Budiman. Built with HTML, CSS, and JavaScript.
     </div>
   </footer>
   <script>
@@ -261,7 +298,7 @@
     });
 
     document.body.classList.add("js-enhanced");
-    const revealItems = document.querySelectorAll(".section, .card, .experience-item, .certification-card");
+    const revealItems = document.querySelectorAll(".section, .card, .principle-item, .experience-item, .certification-card");
 
     if ("IntersectionObserver" in window) {
       const revealObserver = new IntersectionObserver((entries) => {

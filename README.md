@@ -26,6 +26,7 @@ This is a small static professional profile site built with plain HTML, CSS, and
 - About / hero profile
 - Current focus
 - Focus areas
+- Architecture principles
 - Experience
 - Certifications and credentials
 - Contact

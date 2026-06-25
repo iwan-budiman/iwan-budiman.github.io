@@ -450,6 +450,56 @@ h2 {
   color: var(--muted);
 }
 
+.principles-section {
+  background: var(--page);
+}
+
+.principles-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.45fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.principles-header {
+  margin-bottom: 0;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.principle-item {
+  min-height: 190px;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.principle-item span {
+  display: inline-flex;
+  margin-bottom: 1.45rem;
+  color: var(--accent-warm);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.principle-item h3 {
+  margin-bottom: 0.55rem;
+  color: var(--ink-strong);
+  font-size: 1.12rem;
+  line-height: 1.25;
+}
+
+.principle-item p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .experience-layout {
   display: grid;
   grid-template-columns: 0.9fr 1.45fr;
@@ -741,6 +791,8 @@ footer {
   }
 
   .card-grid,
+  .principles-layout,
+  .principles-grid,
   .experience-layout,
   .certification-grid,
   .contact-layout {
