@@ -10,11 +10,11 @@ https://iwan-budiman.github.io
 
 ## Overview
 
-This is a small static professional profile site built with plain HTML and CSS. It presents a high-level solutions architecture profile, focus areas, enterprise experience, certifications, and LinkedIn contact details.
+This is a small static professional profile site built with plain HTML, CSS, and a small amount of JavaScript. It presents a high-level solutions architecture profile, current focus areas, enterprise experience, certifications, and LinkedIn contact details.
 
 ## Structure
 
-- `index.html` - page content, metadata, navigation, profile sections, and credential links
+- `index.html` - page content, metadata, navigation, profile sections, credential links, theme toggle, and scroll reveal behavior
 - `assets/styles.css` - responsive layout, typography, colour theme, and component styling
 - `assets/favicon.svg` - site favicon matching the `IB` brand mark
 - `assets/hero-architecture.jpg` - hero background image
@@ -24,6 +24,7 @@ This is a small static professional profile site built with plain HTML and CSS. 
 ## Site Sections
 
 - About / hero profile
+- Current focus
 - Focus areas
 - Experience
 - Certifications and credentials
