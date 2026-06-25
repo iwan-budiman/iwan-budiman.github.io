@@ -16,7 +16,7 @@ This is a small static professional profile site built with plain HTML, CSS, and
 
 - `index.html` - page content, metadata, navigation, profile sections, and credential links
 - `assets/styles.css` - responsive layout, typography, colour theme, and component styling
-- `assets/site.js` - theme toggle, saved theme preference, and scroll reveal behavior
+- `assets/site.js` - theme toggle, saved theme preference, scroll reveal behavior, and active navigation state
 - `assets/favicon.svg` - site favicon matching the `IB` brand mark
 - `assets/hero-architecture.jpg` - hero background image
 - `assets/cert-*.png` - local certification badge images from Credly
@@ -28,6 +28,7 @@ This is a small static professional profile site built with plain HTML, CSS, and
 - Current focus
 - Focus areas
 - Architecture principles
+- Selected work / impact highlights
 - Experience
 - Certifications and credentials
 - Contact
