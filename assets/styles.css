@@ -10,6 +10,9 @@
   --accent: #3a86a8;
   --accent-deep: #14233a;
   --accent-warm: #d2765f;
+  --accent-readable: #14233a;
+  --chip-bg: #ffffff;
+  --chip-text: #14233a;
   --hero-ink: #ffffff;
   --header-bg: rgba(245, 248, 251, 0.88);
   --header-line: rgba(214, 224, 232, 0.9);
@@ -19,20 +22,23 @@
 }
 
 html[data-theme="dark"] {
-  --page: #0f1723;
-  --surface: #152232;
-  --surface-muted: #1c2d42;
-  --ink: #d7e0e8;
+  --page: #101616;
+  --surface: #172120;
+  --surface-muted: #20312f;
+  --ink: #dbe6e3;
   --ink-strong: #f5f8fb;
-  --muted: #a6b4c2;
-  --line: #2a4056;
-  --line-strong: #3a5269;
-  --accent: #70b7d1;
-  --accent-deep: #0b1420;
-  --accent-warm: #e08a70;
-  --header-bg: rgba(15, 23, 35, 0.9);
-  --header-line: rgba(58, 82, 105, 0.76);
-  --focus-ring: rgba(112, 183, 209, 0.42);
+  --muted: #aab8b4;
+  --line: #2c403d;
+  --line-strong: #41615d;
+  --accent: #89d4ca;
+  --accent-deep: #101a1b;
+  --accent-warm: #e29a74;
+  --accent-readable: #a7e7df;
+  --chip-bg: #233331;
+  --chip-text: #eef7f5;
+  --header-bg: rgba(16, 22, 22, 0.9);
+  --header-line: rgba(65, 97, 93, 0.72);
+  --focus-ring: rgba(137, 212, 202, 0.42);
   --shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
   --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.22);
 }
@@ -489,7 +495,7 @@ h2 {
 .experience-item h3 {
   grid-column: 2;
   margin-bottom: 0.4rem;
-  color: var(--accent-deep);
+  color: var(--accent-readable);
   font-size: 1.12rem;
 }
 
@@ -510,8 +516,8 @@ h2 {
   padding: 0.45rem 0.68rem;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: var(--surface);
-  color: var(--accent-deep);
+  background: var(--chip-bg);
+  color: var(--chip-text);
   font-size: 0.9rem;
   font-weight: 800;
 }
@@ -567,11 +573,17 @@ h2 {
 }
 
 .certification-logo-mark {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   min-height: 42px;
   margin-bottom: 0.85rem;
+}
+
+html[data-theme="dark"] .certification-logo-mark {
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
+  background: #ffffff;
 }
 
 .certification-logo-mark img {
