@@ -1,370 +1,882 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Iwan Budiman" />
-  <meta name="description" content="High-level professional profile for Iwan Budiman, covering solutions architecture, technology delivery, business consulting, and technical leadership." />
-  <meta name="theme-color" content="#14233a" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Iwan Budiman">
+  <meta
+    name="description"
+    content="Iwan Budiman is a solutions architect shaping practical enterprise technology—from business intent and solution direction through delivery and operation."
+  >
+  <meta name="theme-color" content="#0c1517">
+  <meta name="color-scheme" content="light">
 
-  <meta property="og:title" content="Iwan Budiman | Solutions Architect" />
-  <meta property="og:description" content="Solutions architecture, technology delivery, business consulting, and technical leadership." />
-  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Iwan Budiman | Solutions Architect">
+  <meta property="og:site_name" content="Iwan Budiman">
+  <meta
+    property="og:description"
+    content="Architecture that turns enterprise complexity into a clear path to delivery."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://iwan-budiman.github.io/">
+  <meta property="og:image" content="https://iwan-budiman.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta
+    property="og:image:alt"
+    content="Iwan Budiman — From complex systems to clear direction."
+  >
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Iwan Budiman | Solutions Architect">
+  <meta
+    name="twitter:description"
+    content="Architecture that turns enterprise complexity into a clear path to delivery."
+  >
+  <meta name="twitter:image" content="https://iwan-budiman.github.io/assets/og-image.png">
 
   <title>Iwan Budiman | Solutions Architect</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preload" href="assets/hero-architecture.jpg" as="image" type="image/jpeg" fetchpriority="high" />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="canonical" href="https://iwan-budiman.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link
+    rel="preload"
+    href="assets/fonts/manrope-latin.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+  <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/site.js" defer></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Iwan Budiman",
+      "jobTitle": "Solutions Architect",
+      "url": "https://iwan-budiman.github.io/",
+      "sameAs": ["https://www.linkedin.com/in/iwanbudiman/"],
+      "knowsAbout": [
+        "Solutions Architecture",
+        "Enterprise Technology",
+        "Cloud Architecture",
+        "Customer Channels",
+        "Technology Delivery"
+      ]
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header" data-header>
     <div class="container">
-      <nav aria-label="Primary navigation">
-        <a class="brand" href="#about" aria-label="Iwan Budiman home">
-          <span class="brand-mark">IB</span>
-          <span class="brand-text">
-            <span>Iwan Budiman</span>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="#about">
+          <span class="brand-mark" aria-hidden="true">
+            <span>IB</span>
+          </span>
+          <span class="brand-copy">
+            <strong>Iwan Budiman</strong>
             <small>Solutions Architect</small>
           </span>
         </a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#focus">Focus</a>
-          <a href="#approach">Approach</a>
-          <a href="#work">Work</a>
-          <a href="#experience">Experience</a>
-          <a href="#certifications">Credentials</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
-          <span class="theme-toggle-icon" aria-hidden="true"></span>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+          aria-label="Open navigation"
+        >
+          <span></span>
+          <span></span>
         </button>
+
+        <div class="nav-panel" id="primary-menu">
+          <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#approach">Approach</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#credentials">Credentials</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <a
+            class="nav-cta"
+            href="https://www.linkedin.com/in/iwanbudiman/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4 12 12 4M5 4h7v7" />
+            </svg>
+          </a>
+        </div>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero" id="about">
-      <div class="container">
-        <div class="hero-content">
-          <div class="eyebrow">Solutions Architect</div>
-          <h1>Shaping practical technology solutions from strategy through delivery.</h1>
-          <p class="lead">
-            I bring together technical architecture, business consulting, leadership, and
-            end-to-end project delivery to help organisations turn complex needs into reliable outcomes.
+    <section class="hero" id="about" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="hero-kicker">
+            <span class="status-dot" aria-hidden="true"></span>
+            Solutions Architect · Enterprise Technology
           </p>
-          <div class="current-focus" aria-label="Current focus">
+          <h1 id="hero-title">
+            From complex systems to
+            <span>clear direction.</span>
+          </h1>
+          <p class="hero-lead">
+            I align business intent, technology choices, and delivery constraints to shape
+            practical, operable solutions across customer channels, cloud platforms, and
+            AI-enabled services.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">
+              Explore my work
+              <svg viewBox="0 0 18 18" aria-hidden="true">
+                <path d="M9 3v12M4 10l5 5 5-5" />
+              </svg>
+            </a>
+            <a
+              class="button button-ghost"
+              href="https://www.linkedin.com/in/iwanbudiman/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect on LinkedIn
+              <svg viewBox="0 0 18 18" aria-hidden="true">
+                <path d="m5 13 8-8M6 5h7v7" />
+              </svg>
+            </a>
+          </div>
+          <div class="focus-note">
             <span>Current focus</span>
-            <strong>Cloud architecture, AI-enabled platforms, and agentic AI delivery patterns.</strong>
-          </div>
-          <div class="cta">
-            <a class="btn primary" href="#focus">View Focus Areas</a>
-            <a class="btn secondary" href="https://www.linkedin.com/in/iwanbudiman/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+            <p>Cloud architecture, AI-enabled platforms, and agentic AI delivery patterns.</p>
           </div>
         </div>
-        <div class="hero-meta" aria-label="Professional strengths">
-          <div class="meta-item">
-            <strong>Architecture</strong>
-            <span>Pragmatic solution design for complex environments.</span>
-          </div>
-          <div class="meta-item">
-            <strong>Delivery</strong>
-            <span>Full lifecycle thinking from concept to operation.</span>
-          </div>
-          <div class="meta-item">
-            <strong>Leadership</strong>
-            <span>Clear alignment across business and technology teams.</span>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section white" id="focus">
-      <div class="container">
-        <div class="section-header">
-          <p class="kicker">Focus Areas</p>
-          <h2>Technology work grounded in business outcomes.</h2>
-          <p class="section-intro">
-            A high-level view of the capabilities I bring to transformation, modernisation,
-            service-channel, and enterprise delivery initiatives.
+        <div class="architecture-visual">
+          <p class="sr-only">
+            A systems map showing solution architecture connecting business intent,
+            experience, platforms, delivery, and reliable outcomes.
           </p>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <span class="card-number">01</span>
-            <h3>Architecture & Delivery</h3>
-            <p>Guiding initiatives through the full delivery lifecycle, from problem framing and solution design to implementation and operational readiness.</p>
-          </article>
-          <article class="card">
-            <span class="card-number">02</span>
-            <h3>Customer & Digital Channels</h3>
-            <p>Designing technology capabilities for service channels, contact centres, self-service experiences, and branch-enabled operations.</p>
-          </article>
-          <article class="card">
-            <span class="card-number">03</span>
-            <h3>Business Outcomes</h3>
-            <p>Supporting better customer experience, regulatory alignment, productivity, simplification, and cost-conscious technology decisions.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section approach-section" id="approach">
-      <div class="container">
-        <div class="approach-layout">
-          <div class="section-header approach-header">
-            <p class="kicker">Signature Approach</p>
-            <h2>A practical architecture path from intent to operation.</h2>
-            <p class="section-intro">
-              My architecture work usually moves through a repeatable pattern: clarify
-              the outcome, make trade-offs visible, then turn direction into delivery-ready decisions.
-            </p>
-            <div class="approach-note">
-              <span>Use the flow</span>
-              <strong>Select each step to see the decisions and outputs I focus on.</strong>
+          <div class="system-map" aria-hidden="true">
+            <div class="map-toolbar">
+              <span>Decision map / 01</span>
+              <span class="map-status"><i></i> Live model</span>
             </div>
-          </div>
-          <div class="approach-board">
-            <div class="approach-flow" role="tablist" aria-label="Signature architecture approach">
-              <button class="approach-step is-active" type="button" role="tab" aria-selected="true" aria-controls="approach-detail" data-step="0">
-                <span>01</span>
-                Outcome Frame
-              </button>
-              <button class="approach-step" type="button" role="tab" aria-selected="false" aria-controls="approach-detail" data-step="1">
-                <span>02</span>
-                Capability Map
-              </button>
-              <button class="approach-step" type="button" role="tab" aria-selected="false" aria-controls="approach-detail" data-step="2">
-                <span>03</span>
-                Options Review
-              </button>
-              <button class="approach-step" type="button" role="tab" aria-selected="false" aria-controls="approach-detail" data-step="3">
-                <span>04</span>
-                Domain Blueprint
-              </button>
-              <button class="approach-step" type="button" role="tab" aria-selected="false" aria-controls="approach-detail" data-step="4">
-                <span>05</span>
-                Delivery Roadmap
-              </button>
-              <button class="approach-step" type="button" role="tab" aria-selected="false" aria-controls="approach-detail" data-step="5">
-                <span>06</span>
-                Operate & Govern
-              </button>
-            </div>
-            <article class="approach-detail" id="approach-detail" aria-live="polite">
-              <span class="approach-detail-step">01</span>
-              <h3>Outcome Frame</h3>
-              <p>Clarify the business result, success measures, constraints, and stakeholder priorities before choosing technology.</p>
-              <div class="approach-outputs">
-                <strong>Typical outputs</strong>
-                <ul>
-                  <li>Problem statement</li>
-                  <li>Success measures</li>
-                  <li>Decision boundaries</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section white" id="work">
-      <div class="container">
-        <div class="section-header">
-          <p class="kicker">Selected Work</p>
-          <h2>Impact highlights across architecture, channels, and emerging technology.</h2>
-          <p class="section-intro">
-            An anonymised view of the types of initiatives I help shape, from early
-            problem framing through delivery alignment and operational readiness.
-          </p>
-        </div>
-        <div class="impact-grid">
-          <article class="impact-card">
-            <span class="impact-domain">Customer Channels</span>
-            <h3>Service experience modernisation</h3>
-            <dl>
-              <div>
-                <dt>Challenge</dt>
-                <dd>Complex customer journeys across assisted and self-service channels.</dd>
-              </div>
-              <div>
-                <dt>Approach</dt>
-                <dd>Aligned business capability, integration, workflow, and operational requirements into a practical solution direction.</dd>
-              </div>
-              <div>
-                <dt>Outcome</dt>
-                <dd>Clearer delivery path for improved customer experience, productivity, and channel consistency.</dd>
-              </div>
-            </dl>
-          </article>
-          <article class="impact-card">
-            <span class="impact-domain">Cloud & Platforms</span>
-            <h3>Enterprise architecture uplift</h3>
-            <dl>
-              <div>
-                <dt>Challenge</dt>
-                <dd>Modernisation needs across legacy, cloud, data, and integration landscapes.</dd>
-              </div>
-              <div>
-                <dt>Approach</dt>
-                <dd>Balanced target architecture, transition options, risk, reuse, and delivery sequencing.</dd>
-              </div>
-              <div>
-                <dt>Outcome</dt>
-                <dd>More confident decisions across stakeholders, delivery teams, and technology governance forums.</dd>
-              </div>
-            </dl>
-          </article>
-          <article class="impact-card">
-            <span class="impact-domain">AI Enablement</span>
-            <h3>AI-ready operating patterns</h3>
-            <dl>
-              <div>
-                <dt>Challenge</dt>
-                <dd>New AI and agentic AI opportunities requiring guardrails, integration, and business ownership.</dd>
-              </div>
-              <div>
-                <dt>Approach</dt>
-                <dd>Considered data quality, platform controls, human oversight, service design, and operational support.</dd>
-              </div>
-              <div>
-                <dt>Outcome</dt>
-                <dd>A practical foundation for experimenting with AI-enabled capabilities without losing enterprise discipline.</dd>
-              </div>
-            </dl>
-          </article>
-        </div>
-      </div>
-    </section>
+            <svg class="map-connections" viewBox="0 0 620 560" preserveAspectRatio="none">
+              <path class="connection connection-a" d="M120 140H235Q255 140 255 160V245" />
+              <path class="connection connection-b" d="M500 140H385Q365 140 365 160V245" />
+              <path class="connection connection-c" d="M120 420H235Q255 420 255 400V315" />
+              <path class="connection connection-d" d="M500 420H385Q365 420 365 400V315" />
+              <path class="connection connection-e" d="M310 315V472" />
+              <circle cx="120" cy="140" r="4" />
+              <circle cx="500" cy="140" r="4" />
+              <circle cx="120" cy="420" r="4" />
+              <circle cx="500" cy="420" r="4" />
+              <circle cx="310" cy="472" r="4" />
+            </svg>
 
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="experience-layout">
-          <div class="experience-summary">
-            <p class="kicker">Experience</p>
-            <h2>Broad enterprise experience across technology and consulting roles.</h2>
-            <p>
-              A resourceful IT professional with a blend of technical, consulting,
-              leadership, and end-to-end project management capabilities.
-            </p>
-            <div class="industry-strip" aria-label="Industry experience">
-              <span>Finance</span>
-              <span>Government</span>
-              <span>Energy</span>
-              <span>Legal</span>
-              <span>Media</span>
-              <span>Tourism</span>
-            </div>
-          </div>
-          <div class="experience-list">
-            <article class="experience-item">
+            <div class="map-node map-node-intent">
               <span>01</span>
-              <h3>Enterprise Architecture</h3>
-              <p>Senior solutions architecture experience across major financial services initiatives, including customer service, banking, insurance, advice, payments, lending, and operational platforms.</p>
-            </article>
-            <article class="experience-item">
+              <strong>Business intent</strong>
+              <small>Outcomes &amp; constraints</small>
+            </div>
+            <div class="map-node map-node-experience">
               <span>02</span>
-              <h3>Leadership & Consulting</h3>
-              <p>A blend of technical leadership, stakeholder engagement, business analysis, service management, and project delivery across corporate and consulting environments.</p>
-            </article>
-            <article class="experience-item">
+              <strong>Experience</strong>
+              <small>Journeys &amp; channels</small>
+            </div>
+            <div class="map-node map-node-platform">
               <span>03</span>
-              <h3>Innovation & Simplification</h3>
-              <p>Contributing to improved user experience, regulatory alignment, productivity, operational leverage, and sustainable cost outcomes.</p>
-            </article>
+              <strong>Platforms</strong>
+              <small>Cloud, data &amp; integration</small>
+            </div>
+            <div class="map-node map-node-delivery">
+              <span>04</span>
+              <strong>Delivery</strong>
+              <small>Roadmap &amp; guardrails</small>
+            </div>
+            <div class="map-core">
+              <span class="core-orbit"></span>
+              <span class="core-label">Solution architecture</span>
+              <strong>Decisions that hold together.</strong>
+            </div>
+            <div class="map-output">
+              <span class="output-icon">
+                <svg viewBox="0 0 20 20">
+                  <path d="m5 10 3 3 7-7" />
+                </svg>
+              </span>
+              <span>
+                <small>Designed for</small>
+                <strong>Reliable outcomes</strong>
+              </span>
+            </div>
+            <span class="map-coordinate map-coordinate-one">INTENT / OUTCOME</span>
+            <span class="map-coordinate map-coordinate-two">SYSTEM / OPERABLE</span>
           </div>
         </div>
       </div>
+
+      <ul class="container hero-proof">
+        <li>
+          <span>01</span>
+          <strong>Architecture</strong>
+          <p>Pragmatic design for complex environments.</p>
+        </li>
+        <li>
+          <span>02</span>
+          <strong>Delivery</strong>
+          <p>Full-lifecycle thinking from concept to operation.</p>
+        </li>
+        <li>
+          <span>03</span>
+          <strong>Leadership</strong>
+          <p>Alignment across business and technology teams.</p>
+        </li>
+      </ul>
     </section>
 
-    <section class="section white" id="certifications">
+    <section class="section work-section" id="work" aria-labelledby="work-title">
       <div class="container">
-        <div class="section-header">
-          <p class="kicker">Certifications</p>
-          <h2>Cloud, platform, and service management credentials.</h2>
-          <p class="section-intro">
-            Current and supporting certifications across cloud architecture, data streaming,
-            observability, Microsoft platforms, and IT service management.
-          </p>
-        </div>
-        <div class="certification-grid">
-          <a class="certification-card featured-cert linked-cert" href="https://www.credly.com/badges/501dd96f-dee8-4e82-978e-533387161c1b" target="_blank" rel="noopener noreferrer">
-            <img class="certification-badge" src="assets/cert-aws-solutions-architect.png" alt="AWS Certified Solutions Architect - Associate badge" />
-            <span class="certification-provider">Amazon Web Services</span>
-            <h3>AWS Certified Solutions Architect - Associate</h3>
-            <p>Issued Mar 2026 · Expires Mar 2029</p>
-            <span class="credential-link-text">View verified credential</span>
-          </a>
-          <a class="certification-card featured-cert linked-cert" href="https://www.credly.com/badges/af3393cb-0814-4637-9a34-adacfd5ac05d" target="_blank" rel="noopener noreferrer">
-            <img class="certification-badge" src="assets/cert-aws-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner badge" />
-            <span class="certification-provider">Amazon Web Services</span>
-            <h3>AWS Certified Cloud Practitioner</h3>
-            <p>Issued Mar 2025 · Expires Mar 2029</p>
-            <span class="credential-link-text">View verified credential</span>
-          </a>
-          <a class="certification-card linked-cert" href="https://www.credential.net/ee40b761-e805-444e-a102-6b9292e97c1a" target="_blank" rel="noopener noreferrer">
-            <span class="certification-logo-mark">
-              <img src="assets/cert-confluent-logo.svg" alt="Confluent logo" />
-            </span>
-            <span class="certification-provider">Confluent</span>
-            <h3>Confluent Fundamentals Accreditation</h3>
-            <p>Issued Jul 2021 · Credential ID 34870369</p>
-            <span class="credential-link-text">View verified credential</span>
-          </a>
-          <a class="certification-card linked-cert" href="https://www.credly.com/badges/51795162-ecf7-462d-90ac-110278dc263d" target="_blank" rel="noopener noreferrer">
-            <img class="certification-badge compact-badge" src="assets/cert-azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals badge" />
-            <span class="certification-provider">Microsoft</span>
-            <h3>Microsoft Certified: Azure Fundamentals</h3>
-            <p>Issued May 2019 · Credential ID 3482862</p>
-            <span class="credential-link-text">View verified credential</span>
-          </a>
-          <article class="certification-card">
-            <span class="certification-provider">Splunk</span>
-            <h3>Splunk Certified Power User</h3>
-            <p>Issued Dec 2017</p>
-          </article>
-          <article class="certification-card">
-            <span class="certification-provider">Splunk</span>
-            <h3>Splunk Certified User</h3>
-            <p>Issued Nov 2017</p>
-          </article>
-          <article class="certification-card">
-            <span class="certification-provider">BCS, The Chartered Institute for IT</span>
-            <h3>ITIL V3 Expert</h3>
-            <p>Issued Jun 2013</p>
-          </article>
-          <article class="certification-card">
-            <span class="certification-provider">Microsoft</span>
-            <h3>Microsoft Certified Professional</h3>
-            <p>Issued Sep 2005</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-band" id="contact">
-      <div class="container">
-        <div class="contact-layout">
+        <div class="section-heading section-heading-split" data-reveal>
           <div>
-            <p class="kicker">Contact</p>
-            <h2>Connect professionally.</h2>
+            <p class="eyebrow">Representative engagements</p>
+            <span class="section-index">01 / Work</span>
+          </div>
+          <div>
+            <h2 id="work-title">Architecture grounded in the reality of delivery.</h2>
             <p>
-              For professional background, current focus, and network updates, connect with me on LinkedIn.
+              An anonymised view of the kinds of initiatives I help shape—from early
+              problem framing through delivery alignment and operational readiness.
             </p>
           </div>
-          <a class="btn contact-link" href="https://www.linkedin.com/in/iwanbudiman/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+        </div>
+
+        <div class="case-list">
+          <article class="case-study case-study-coral" data-reveal>
+            <div class="case-aside">
+              <span class="case-number">01</span>
+              <span class="case-domain">Customer channels</span>
+            </div>
+            <div class="case-main">
+              <div class="case-title-row">
+                <h3>Service experience modernisation</h3>
+                <span class="case-label">Anonymised</span>
+              </div>
+              <div class="case-details">
+                <div>
+                  <span>Context</span>
+                  <p>Complex customer journeys spanning assisted and self-service channels.</p>
+                </div>
+                <div>
+                  <span>Architecture move</span>
+                  <p>Connected business capability, integration, workflow, and operational needs into one solution direction.</p>
+                </div>
+                <div>
+                  <span>Value enabled</span>
+                  <p>A coherent delivery path for better experience, productivity, and channel consistency.</p>
+                </div>
+              </div>
+            </div>
+            <div class="case-graphic" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <svg viewBox="0 0 170 120">
+                <path d="M8 95C38 95 40 32 82 32s37 56 80 56" />
+                <circle cx="8" cy="95" r="5" />
+                <circle cx="82" cy="32" r="5" />
+                <circle cx="162" cy="88" r="5" />
+              </svg>
+            </div>
+          </article>
+
+          <article class="case-study case-study-blue" data-reveal>
+            <div class="case-aside">
+              <span class="case-number">02</span>
+              <span class="case-domain">Cloud &amp; platforms</span>
+            </div>
+            <div class="case-main">
+              <div class="case-title-row">
+                <h3>Enterprise architecture uplift</h3>
+                <span class="case-label">Anonymised</span>
+              </div>
+              <div class="case-details">
+                <div>
+                  <span>Context</span>
+                  <p>Modernisation needs across legacy, cloud, data, and integration landscapes.</p>
+                </div>
+                <div>
+                  <span>Architecture move</span>
+                  <p>Balanced target-state design, transition options, risk, reuse, and delivery sequencing.</p>
+                </div>
+                <div>
+                  <span>Value enabled</span>
+                  <p>Clearer decisions for stakeholders, delivery teams, and technology governance forums.</p>
+                </div>
+              </div>
+            </div>
+            <div class="case-graphic" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <svg viewBox="0 0 170 120">
+                <path d="M10 86h35V43h42v34h32V26h42" />
+                <circle cx="10" cy="86" r="5" />
+                <circle cx="87" cy="77" r="5" />
+                <circle cx="161" cy="26" r="5" />
+              </svg>
+            </div>
+          </article>
+
+          <article class="case-study case-study-mint" data-reveal>
+            <div class="case-aside">
+              <span class="case-number">03</span>
+              <span class="case-domain">AI enablement</span>
+            </div>
+            <div class="case-main">
+              <div class="case-title-row">
+                <h3>AI-ready operating patterns</h3>
+                <span class="case-label">Emerging focus</span>
+              </div>
+              <div class="case-details">
+                <div>
+                  <span>Context</span>
+                  <p>AI and agentic AI opportunities that need enterprise guardrails, integration, and clear ownership.</p>
+                </div>
+                <div>
+                  <span>Architecture move</span>
+                  <p>Frame data quality, platform controls, human oversight, service design, and operational support together.</p>
+                </div>
+                <div>
+                  <span>Value enabled</span>
+                  <p>A disciplined foundation for exploring AI-enabled capabilities in an enterprise environment.</p>
+                </div>
+              </div>
+            </div>
+            <div class="case-graphic" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <svg viewBox="0 0 170 120">
+                <path d="M9 65h36l19-31 32 58 20-37h45" />
+                <circle cx="9" cy="65" r="5" />
+                <circle cx="96" cy="92" r="5" />
+                <circle cx="161" cy="55" r="5" />
+              </svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach-section" id="approach" aria-labelledby="approach-title">
+      <div class="approach-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading approach-heading" data-reveal>
+          <div>
+            <p class="eyebrow eyebrow-light">Signature approach</p>
+            <span class="section-index section-index-light">02 / Method</span>
+          </div>
+          <div>
+            <h2 id="approach-title">A practical path from intent to operation.</h2>
+            <p>
+              Clarify the outcome. Make trade-offs visible. Turn direction into
+              delivery-ready decisions.
+            </p>
+          </div>
+        </div>
+
+        <div class="approach-shell" data-reveal>
+          <div class="approach-tabs" role="tablist" aria-label="Architecture approach phases">
+            <button
+              class="approach-tab is-active"
+              id="approach-tab-0"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="approach-panel"
+              data-step="0"
+            >
+              <span>01</span>
+              <strong>Outcome frame</strong>
+              <small>Intent</small>
+            </button>
+            <button
+              class="approach-tab"
+              id="approach-tab-1"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="approach-panel"
+              data-step="1"
+              tabindex="-1"
+            >
+              <span>02</span>
+              <strong>Capability map</strong>
+              <small>Needs</small>
+            </button>
+            <button
+              class="approach-tab"
+              id="approach-tab-2"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="approach-panel"
+              data-step="2"
+              tabindex="-1"
+            >
+              <span>03</span>
+              <strong>Options review</strong>
+              <small>Choices</small>
+            </button>
+            <button
+              class="approach-tab"
+              id="approach-tab-3"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="approach-panel"
+              data-step="3"
+              tabindex="-1"
+            >
+              <span>04</span>
+              <strong>Domain blueprint</strong>
+              <small>Design</small>
+            </button>
+            <button
+              class="approach-tab"
+              id="approach-tab-4"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="approach-panel"
+              data-step="4"
+              tabindex="-1"
+            >
+              <span>05</span>
+              <strong>Delivery roadmap</strong>
+              <small>Sequence</small>
+            </button>
+            <button
+              class="approach-tab"
+              id="approach-tab-5"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="approach-panel"
+              data-step="5"
+              tabindex="-1"
+            >
+              <span>06</span>
+              <strong>Operate &amp; govern</strong>
+              <small>Reality</small>
+            </button>
+          </div>
+
+          <div
+            class="approach-panel"
+            id="approach-panel"
+            role="tabpanel"
+            tabindex="0"
+            aria-labelledby="approach-tab-0"
+            aria-live="polite"
+          >
+            <div class="panel-topline">
+              <span class="panel-phase">Phase 01 / 06</span>
+              <span class="panel-signal"><i></i> Decision point</span>
+            </div>
+            <div class="panel-content">
+              <span class="panel-number">01</span>
+              <div>
+                <p class="panel-kicker">Start with the why</p>
+                <h3>Outcome frame</h3>
+                <p class="panel-summary">
+                  Clarify the business result, success measures, constraints, and
+                  stakeholder priorities before choosing technology.
+                </p>
+              </div>
+            </div>
+            <div class="panel-outputs">
+              <p>Typical outputs</p>
+              <ul>
+                <li>Problem statement</li>
+                <li>Success measures</li>
+                <li>Decision boundaries</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <ol class="approach-fallback">
+          <li>
+            <span>01 / Intent</span>
+            <h3>Outcome frame</h3>
+            <p>Clarify the business result, success measures, constraints, and stakeholder priorities before choosing technology.</p>
+            <ul>
+              <li>Problem statement</li>
+              <li>Success measures</li>
+              <li>Decision boundaries</li>
+            </ul>
+          </li>
+          <li>
+            <span>02 / Needs</span>
+            <h3>Capability map</h3>
+            <p>Translate customer, colleague, risk, and operational needs into the capabilities the solution must support.</p>
+            <ul>
+              <li>Capability view</li>
+              <li>Journey touchpoints</li>
+              <li>Ownership model</li>
+            </ul>
+          </li>
+          <li>
+            <span>03 / Choices</span>
+            <h3>Options review</h3>
+            <p>Compare realistic solution paths across value, complexity, risk, cost, reuse, and delivery confidence.</p>
+            <ul>
+              <li>Option set</li>
+              <li>Trade-off summary</li>
+              <li>Recommended direction</li>
+            </ul>
+          </li>
+          <li>
+            <span>04 / Design</span>
+            <h3>Domain blueprint</h3>
+            <p>Shape the target architecture across integration, data, security, resilience, cloud, and operational concerns.</p>
+            <ul>
+              <li>Solution blueprint</li>
+              <li>Integration patterns</li>
+              <li>Key architecture decisions</li>
+            </ul>
+          </li>
+          <li>
+            <span>05 / Sequence</span>
+            <h3>Delivery roadmap</h3>
+            <p>Turn architecture direction into delivery increments that teams can sequence, govern, and execute.</p>
+            <ul>
+              <li>Transition states</li>
+              <li>Dependency map</li>
+              <li>Delivery guardrails</li>
+            </ul>
+          </li>
+          <li>
+            <span>06 / Reality</span>
+            <h3>Operate &amp; govern</h3>
+            <p>Prepare the solution for production reality, including support, observability, governance, and AI guardrails where needed.</p>
+            <ul>
+              <li>Operational readiness</li>
+              <li>Control points</li>
+              <li>Governance guardrails</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section expertise-section" id="expertise" aria-labelledby="expertise-title">
+      <div class="container">
+        <div class="section-heading section-heading-split" data-reveal>
+          <div>
+            <p class="eyebrow">Expertise &amp; breadth</p>
+            <span class="section-index">03 / Profile</span>
+          </div>
+          <div>
+            <h2 id="expertise-title">Breadth across the enterprise. Focus at the decision point.</h2>
+            <p>
+              Technical architecture, consulting, leadership, and end-to-end delivery
+              experience brought together around the outcome that matters.
+            </p>
+          </div>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card expertise-card-featured" data-reveal>
+            <div class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <rect x="5" y="5" width="14" height="14" rx="2" />
+                <rect x="29" y="5" width="14" height="14" rx="2" />
+                <rect x="17" y="29" width="14" height="14" rx="2" />
+                <path d="M19 12h10M12 19v7h12v3M36 19v7H24" />
+              </svg>
+            </div>
+            <div>
+              <span>01 / Core capability</span>
+              <h3>Enterprise architecture &amp; modernisation</h3>
+              <p>
+                Guiding initiatives from problem framing and option analysis through
+                target architecture, transition planning, and operational readiness.
+              </p>
+            </div>
+            <ul>
+              <li>Solution direction</li>
+              <li>Transition states</li>
+              <li>Architecture decisions</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card" data-reveal>
+            <div class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <circle cx="15" cy="16" r="7" />
+                <circle cx="34" cy="31" r="8" />
+                <path d="M21 19 28 26M8 39c2-7 7-10 14-10" />
+              </svg>
+            </div>
+            <div>
+              <span>02 / Experience</span>
+              <h3>Customer &amp; digital channels</h3>
+              <p>
+                Technology capabilities for service channels, contact centres,
+                self-service experiences, and branch-enabled operations.
+              </p>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-reveal>
+            <div class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M9 34h28a7 7 0 0 0 0-14 12 12 0 0 0-23-1A8 8 0 0 0 9 34Z" />
+                <path d="M17 27h14M20 21l-3 6 3 6M28 21l3 6-3 6" />
+              </svg>
+            </div>
+            <div>
+              <span>03 / Platforms</span>
+              <h3>Cloud, integration &amp; AI enablement</h3>
+              <p>
+                Architecture choices spanning cloud platforms, integration, data,
+                observability, and responsible AI operating patterns.
+              </p>
+            </div>
+          </article>
+
+          <article class="expertise-card expertise-card-wide" data-reveal>
+            <div class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M7 37 19 25l8 8L42 14" />
+                <path d="M31 14h11v11" />
+              </svg>
+            </div>
+            <div>
+              <span>04 / Outcomes</span>
+              <h3>Leadership, governance &amp; delivery</h3>
+              <p>
+                Creating alignment across stakeholders, delivery teams, and governance
+                forums—balancing customer experience, risk, productivity, simplification,
+                and sustainable technology choices.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="experience-band" data-reveal>
+          <figure class="experience-image">
+            <img
+              src="assets/hero-architecture.jpg"
+              alt="Modern workspace with an architecture diagram mapped across glass"
+              width="1672"
+              height="941"
+              loading="lazy"
+              decoding="async"
+            >
+            <figcaption>
+              <small>Enterprise landscape</small>
+              <strong>Strategy → operation</strong>
+            </figcaption>
+          </figure>
+          <div class="experience-copy">
+            <p class="mini-label">Cross-industry perspective</p>
+            <h3>Technology experience across complex, regulated, and service-led environments.</h3>
+            <p>
+              Senior solutions architecture experience in financial services, spanning
+              customer service, banking, insurance, advice, payments, lending, and
+              operational platforms—supported by broader consulting experience.
+            </p>
+            <ul class="industry-list">
+              <li>Finance</li>
+              <li>Government</li>
+              <li>Energy</li>
+              <li>Legal</li>
+              <li>Media</li>
+              <li>Tourism</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section credentials-section" id="credentials" aria-labelledby="credentials-title">
+      <div class="container">
+        <div class="section-heading credentials-heading" data-reveal>
+          <div>
+            <p class="eyebrow">Credentials</p>
+            <span class="section-index">04 / Trust</span>
+          </div>
+          <div>
+            <h2 id="credentials-title">Cloud and platform credentials, backed by broad delivery experience.</h2>
+          </div>
+        </div>
+
+        <div class="credential-layout">
+          <a
+            class="credential-feature"
+            href="https://www.credly.com/badges/501dd96f-dee8-4e82-978e-533387161c1b"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-reveal
+          >
+            <div class="credential-feature-copy">
+              <span class="credential-state"><i></i> Featured credential</span>
+              <span class="credential-provider">Amazon Web Services</span>
+              <h3>AWS Certified Solutions Architect – Associate</h3>
+              <p>Issued March 2026 · Expires March 2029</p>
+              <span class="credential-action">
+                View verified credential
+                <svg viewBox="0 0 18 18" aria-hidden="true">
+                  <path d="m5 13 8-8M6 5h7v7" />
+                </svg>
+              </span>
+            </div>
+            <img
+              src="assets/cert-aws-solutions-architect.png"
+              alt=""
+              width="672"
+              height="352"
+              loading="lazy"
+              decoding="async"
+            >
+          </a>
+
+          <div class="credential-list" data-reveal>
+            <a
+              class="credential-row"
+              href="https://www.credly.com/badges/af3393cb-0814-4637-9a34-adacfd5ac05d"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="credential-row-logo credential-row-logo-image">
+                <img
+                  src="assets/cert-aws-cloud-practitioner.png"
+                  alt=""
+                  width="672"
+                  height="352"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </span>
+              <span>
+                <small>Amazon Web Services</small>
+                <strong>AWS Certified Cloud Practitioner</strong>
+                <em>Issued 2025</em>
+              </span>
+              <svg viewBox="0 0 18 18" aria-hidden="true">
+                <path d="m5 13 8-8M6 5h7v7" />
+              </svg>
+            </a>
+
+            <a
+              class="credential-row"
+              href="https://www.credly.com/badges/51795162-ecf7-462d-90ac-110278dc263d"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="credential-row-logo credential-row-logo-image">
+                <img
+                  src="assets/cert-azure-fundamentals.png"
+                  alt=""
+                  width="672"
+                  height="352"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </span>
+              <span>
+                <small>Microsoft</small>
+                <strong>Microsoft Certified: Azure Fundamentals</strong>
+                <em>Issued 2019</em>
+              </span>
+              <svg viewBox="0 0 18 18" aria-hidden="true">
+                <path d="m5 13 8-8M6 5h7v7" />
+              </svg>
+            </a>
+
+            <a
+              class="credential-row"
+              href="https://www.credential.net/ee40b761-e805-444e-a102-6b9292e97c1a"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="credential-row-logo credential-row-logo-word">C</span>
+              <span>
+                <small>Confluent</small>
+                <strong>Confluent Fundamentals Accreditation</strong>
+                <em>Issued 2021</em>
+              </span>
+              <svg viewBox="0 0 18 18" aria-hidden="true">
+                <path d="m5 13 8-8M6 5h7v7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="earlier-credentials" data-reveal>
+          <div>
+            <span>Earlier credentials</span>
+            <p>Supporting foundations across observability, service management, and Microsoft technologies.</p>
+          </div>
+          <ul>
+            <li><strong>Splunk</strong><span>Certified Power User · 2017</span></li>
+            <li><strong>Splunk</strong><span>Certified User · 2017</span></li>
+            <li><strong>BCS</strong><span>ITIL V3 Expert · 2013</span></li>
+            <li><strong>Microsoft</strong><span>Microsoft Certified Professional · 2005</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-grid" aria-hidden="true"></div>
+      <div class="container contact-layout">
+        <div data-reveal>
+          <p class="eyebrow eyebrow-dark">Start a conversation</p>
+          <h2 id="contact-title">
+            Turn the complex into
+            <span>a clear next move.</span>
+          </h2>
+        </div>
+        <div class="contact-copy" data-reveal>
+          <p>
+            Connect with me on LinkedIn for professional background, current focus,
+            and network updates.
+          </p>
+          <a
+            class="button button-dark"
+            href="https://www.linkedin.com/in/iwanbudiman/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Connect on LinkedIn
+            <svg viewBox="0 0 18 18" aria-hidden="true">
+              <path d="m5 13 8-8M6 5h7v7" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      &copy; 2026 Iwan Budiman. Built with HTML, CSS, and JavaScript.
+      <a class="footer-brand" href="#about">
+        <span class="brand-mark brand-mark-small" aria-hidden="true"><span>IB</span></span>
+        <span>Iwan Budiman</span>
+      </a>
+      <p>Solutions architecture · Technology delivery · Enterprise change</p>
+      <span>© <span data-year>2026</span> Iwan Budiman</span>
     </div>
   </footer>
 </body>
