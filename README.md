@@ -33,9 +33,9 @@ Key experience features include:
 
 1. Hero and professional positioning
 2. Representative engagements
-3. Signature architecture approach
-4. Expertise and industry breadth
-5. Credentials
+3. Expertise and industry breadth
+4. Credentials
+5. Signature architecture approach
 6. Contact
 
 The primary navigation links to these sections with URL fragments rather than
